@@ -6,7 +6,7 @@
 #include <iostream>
 
 
-class Level{
+class Level {
 public:
 	Level(sf::RenderWindow* hwnd, Input* in);
 	~Level();
@@ -24,6 +24,16 @@ private:
 	sf::RenderWindow* window;
 	Input* input;
 
+	bool showwall = false;
+
 	// Add your object here
+
+	sf::Font font;
+	sf::Text text;
+	sf::Text hiddenText;
+	sf::Text mousePosX;
+	sf::Text mousePosY;
+	sf::CircleShape cursour;
+	sf::RectangleShape coverup;
 
 };
